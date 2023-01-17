@@ -35,13 +35,11 @@
         </ul>
         </div>
 
-        <div class="container">
-            <button type="button" class="header-btn">
-                <svg class="modal-header">
-                    <use href="./images/header-modal.svg#icon-header-modal"></use>
-                </svg>
-            </button>
-        </div>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="modal-header">
+                <use href="./images/header-modal.svg#icon-header-modal"></use>
+            </svg>
+        </button>
     </header>
 
     <main>
@@ -399,77 +397,114 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" data-modal-close class="modal-close" >
-            <svg class="modal-svg" >
-                <use href="./images/close-icon.svg#icon-close-icon"></use>
-            </svg>
+            <button type="button" data-modal-close class="modal-close">
+                <svg class="modal-svg">
+                    <use href="./images/close-icon.svg#icon-close-icon"></use>
+                </svg>
             </button>
             <p class="modal-text">Leave your contacts and we will call you back</p>
             <form class="modal-form">
                 <label class="modal-form-label">
-                    <span class="modal-label-name">Name</span> 
-                <div class="modal-form-icon" >
-                    <input 
-                    type="text" 
-                    class="modal-form-input"
-                    name="user-name"
-                    required />
-                    <svg class="modal-form-svg">
-                        <use href="./images/modal-input-icons.svg#icon-modal-form-name"></use>
-                    </svg>
-                </div>
+                    <span class="modal-label-name">Name</span>
+                    <div class="modal-form-icon">
+                        <input type="text" class="modal-form-input" name="user-name" required />
+                        <svg class="modal-form-svg">
+                            <use href="./images/modal-input-icons.svg#icon-modal-form-name"></use>
+                        </svg>
+                    </div>
                 </label>
                 <label class="modal-form-label">
                     <span class="modal-label-name">Phone</span>
-                <div class="modal-form-icon">
-                    <input 
-                    type="text" 
-                    class="modal-form-input"
-                    name="user-phone"
-                    required />
-                    <svg class="modal-form-svg">
-                        <use href="./images/modal-input-icons.svg#icon-modal-form-tel"></use>
-                    </svg>
-                </div>
+                    <div class="modal-form-icon">
+                        <input type="text" class="modal-form-input" name="user-phone" required />
+                        <svg class="modal-form-svg">
+                            <use href="./images/modal-input-icons.svg#icon-modal-form-tel"></use>
+                        </svg>
+                    </div>
                 </label>
                 <label class="modal-form-label">
                     <span class="modal-label-name">Email</span>
-                <div class="modal-form-icon">
-                    <input 
-                    type="text" 
-                    class="modal-form-input"
-                    name="user-mail"
-                    required />
-                    <svg class="modal-form-svg">
-                        <use href="./images/modal-input-icons.svg#icon-modal-form-mail"></use>
-                    </svg>
-                </div>
+                    <div class="modal-form-icon">
+                        <input type="text" class="modal-form-input" name="user-mail" required />
+                        <svg class="modal-form-svg">
+                            <use href="./images/modal-input-icons.svg#icon-modal-form-mail"></use>
+                        </svg>
+                    </div>
                 </label>
                 <label class="modal-form-label">
                     <span class="modal-label-name">Comment</span>
-                    <textarea 
-                    name="user-massage"
-                    class="modal-form-massage"
-                    placeholder="Text input"
-                    ></textarea>
+                    <textarea name="user-massage" class="modal-form-massage" placeholder="Text input"></textarea>
                 </label>
                 <label for="user-policy" class="modal-form-check-text">
-                    <input 
-                        id="user-policy" 
-                        type="checkbox" 
-                        name="user-policy" 
-                        class="modal-form-check visually-hidden">
-                        <span class="modal-policy">
-                            <svg class="modal-policy-icon">
-                                <use href="./images/policy-icon.svg#icon-modal-checkbox"></use>
-                            </svg>
-                        </span>
-                        I accept the terms and conditions of the&nbsp;<a class="modal-form-link" href="">Privacy Policy</a>
+                    <input id="user-policy" type="checkbox" name="user-policy" class="modal-form-check visually-hidden">
+                    <span class="modal-policy">
+                        <svg class="modal-policy-icon">
+                            <use href="./images/policy-icon.svg#icon-modal-checkbox"></use>
+                        </svg>
+                    </span>
+                    I accept the terms and conditions of the&nbsp;<a class="modal-form-link" href="">Privacy Policy</a>
                 </label>
-                    <button type="submit" class="modal-form-btn">Send</button>               
-            </form>           
+                <button type="submit" class="modal-form-btn">Send</button>
+            </form>
         </div>
     </div>
+
+    <!-- Mobile modal -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="modal-svg">
+                <use href="./images/close-icon.svg#icon-close-icon"></use>
+            </svg>
+        </button>
+    
+        <ul class="mobile-menu">
+            <li class="mobile-menu-list list-none"><a class="mobile-menu-link link" href="">Studio</a></li>
+            <li class="mobile-menu-list list-none"><a class="mobile-menu-link link" href="">Portfolio</a></li>
+            <li class="mobile-menu-list list-none"><a class="mobile-menu-link link" href="">Contacts</a></li>
+        </ul>
+
+        <ul class="mobile-contacts">
+            <li class="mobile-contacts-item list-none">
+                <a class="mobile-contacts-link accent link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-contacts-item list-none">
+                <a class="mobile-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+
+        <ul class="mob-modal-soc-list">
+            <li class="mob-modal-soc-item list-none">
+                <a href="#" class="mob-modal-soc-link">
+                    <svg class="mob-modal-svg">
+                        <use href="./images/icons-team.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mob-modal-soc-item list-none">
+                <a href="#" class="mob-modal-soc-link">
+                    <svg class="mob-modal-svg">
+                        <use href="./images/icons-team.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mob-modal-soc-item list-none">
+                <a href="#" class="mob-modal-soc-link">
+                    <svg class="mob-modal-svg">
+                        <use href="./images/icons-team.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mob-modal-soc-item list-none">
+                <a href="#" class="mob-modal-soc-link">
+                    <svg class="mob-modal-svg">
+                        <use href="./images/icons-team.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
 
     <script src="./js/modal.js"></script>
 </body>
