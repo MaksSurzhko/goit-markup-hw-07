@@ -229,6 +229,7 @@ body {
     .header-list-info {
         display: flex;
         flex-direction: column;
+        margin-top: 24px;
     }
 }
 
@@ -249,8 +250,9 @@ body {
         display: flex;
         margin: 0;
         padding: 0;
-        font-size: 16px;
-        line-height: calc(24 / 16);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
         color: #434455;
         transition: color var(--overlay-time);
     }
@@ -1116,6 +1118,7 @@ body {
 /* desktop screen */
 @media screen and (min-width:1200px) {
     .footer-subscribe {
+        margin-top: 0;
         margin-left: 80px;
     }
 }
