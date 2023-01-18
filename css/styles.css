@@ -31,8 +31,8 @@ body {
 }
 
 .container {
-min-width: 396px;
-    max-width: 480px;
+    min-width: 320px;
+    max-width: 428px;
     padding-right: 16px;
     padding-left: 16px;
     margin: 0 auto;
@@ -402,6 +402,13 @@ min-width: 396px;
     margin-top: 120px
 }
 
+/* desktop screen */
+@media screen and (min-width:1200px) {
+    .section-two {
+       margin-bottom: 120px; 
+    }
+}
+
 .sctn-prof {
     
 }
@@ -410,12 +417,14 @@ min-width: 396px;
 @media screen and (min-width: 768px) {
     .sctn-prof {
         margin-right: 24px;
+        flex-basis: calc((100% - 2 * 24px) / 2);
     }
 }
 
 /* desktop screen */
 @media screen and (min-width:1200px) {
     .sctn-prof {
+        flex-basis: calc((100% - 5 * 24px) / 6);
         margin-right: 24px;
     }
 }
@@ -469,7 +478,7 @@ min-width: 396px;
     .sctn-prof-list {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        flex-wrap: wrap;
     }
 }
 
@@ -824,12 +833,14 @@ min-width: 396px;
     margin-right: 16px;
     margin-bottom: 72px;
     border-radius: 4px;
+    flex-basis: calc((100% - 2 * 24px) / 2);
 }
 
 /* tablet screen */
 @media screen and (min-width: 768px) {
     .customers-item {
         margin-right: 24px;
+        flex-basis: calc((100% - 2 * 24px) / 4);
     }
 }
 
@@ -907,8 +918,9 @@ min-width: 396px;
 /* tablet screen */
 @media screen and (min-width: 768px) {
     .footer-wraper {
-        display: flex;
+        flex-basis: calc((100% - 2 * 24px) / 2);
         flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 
@@ -933,6 +945,7 @@ min-width: 396px;
         padding: 0;
         margin: 0;
         align-items: flex-start;
+        margin-left: 108px;
     }
 }
 
@@ -981,7 +994,7 @@ min-width: 396px;
 /* tablet screen */
 @media screen and (min-width: 768px) {
     .footer-social-media {
-        margin-left: 120px;
+        margin-left: 24px;
         margin-bottom: 0;
     }
 }
@@ -1047,6 +1060,16 @@ min-width: 396px;
     margin-right: 16px;
 }
 
+/* tablet screen */
+@media screen and (min-width: 768px) {
+    .footer-soc-item {}
+}
+
+/* desktop screen */
+@media screen and (min-width:1200px) {
+    .footer-soc-item {}
+}
+
 
 .footer-soc-item:last-child {
     margin-right: 0;
@@ -1085,7 +1108,8 @@ min-width: 396px;
 /* tablet screen */
 @media screen and (min-width: 768px) {
     .footer-subscribe {
-        
+        margin-top: 72px;
+        margin-left: 108px;
     }
 }
 
@@ -1160,6 +1184,8 @@ min-width: 396px;
 /* tablet screen */
 @media screen and (min-width: 768px) {
     .footer-input {
+        margin: 0;
+        margin-right: 24px;
         width: 264px;
     }
 }
