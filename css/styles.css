@@ -691,8 +691,7 @@ img{
 /* desktop screen */
 @media screen and (min-width:1200px) {
     .section-three {
-        display: block;
-    padding-top: 120px;
+    display: block;
     padding-bottom: 120px;
     }
 }
