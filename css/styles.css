@@ -321,6 +321,7 @@ img{
 
 /*_______Section-1________*/
 
+@media screen and (min-width: 428px){
 .section-one {
     max-width: 480px;   
     background-color: var(--gray-color);
@@ -331,9 +332,10 @@ img{
     padding-top: 112px;
     padding-bottom: 112px;
     margin: 0 auto;
+    }
 }
 
-@media (min-device-pixel-ratio: 2),
+@media screen and (min-width: 428px) and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .section-one{
@@ -343,14 +345,14 @@ img{
 
 /*_______screen > 480px________*/
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
     .section-one{
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/webstudio/02_tablet/hero-bg-tablet.jpg");
     }
     
 }
 
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2),
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .section-one{
@@ -361,14 +363,14 @@ img{
 
 /*_______screen > 768px________*/
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
     .section-one {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/webstudio/03_desktop/hero-bg-desktop.jpg");
     }
 
 }
 
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .section-one {
@@ -874,7 +876,6 @@ img{
 .photo-text {
     padding: 32px 16px;
     background: var(--white-color);
-    display: block;
 }
 
 .section-four-name {
@@ -1972,14 +1973,10 @@ display: flex;
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
-    color: #2E2F42;
+    color: #404BBF;
     transition: color var(--overlay-time);
 }
 
-.mobile-menu-link:hover,
-.mobile-menu-link:focus {
-    color: #404BBF;
-}
 
 .mobile-contacts{
     margin: 0;
@@ -1998,7 +1995,7 @@ display: flex;
     font-weight: 500;
         font-size: 20px;
         line-height: 24px;
-        color: #434455;  
+        color: #434455;
 }
 
 .mobile-contacts-link.accent{
